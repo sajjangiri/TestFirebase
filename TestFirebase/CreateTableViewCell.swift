@@ -10,6 +10,7 @@ import UIKit
 
 class CreateTableViewCell: UITableViewCell {
 
+  @IBOutlet weak var newChannelNameField: UITextField!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

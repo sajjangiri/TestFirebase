@@ -7,9 +7,17 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
+import JSQMessagesViewController
 
-class ChatViewController: UIViewController {
-
+class ChatViewController:JSQMessagesViewController {
+  var channelRef: DatabaseReference?
+  var channel: Chanel? {
+    didSet {
+      title = channel?.name
+    }
+  }
     override func viewDidLoad() {
         super.viewDidLoad()
 

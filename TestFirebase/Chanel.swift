@@ -6,4 +6,15 @@
 //  Copyright © 2017 Eeposit 01. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class Chanel {
+
+  var id: String?
+  var name: String?
+
+  init(id: String, name: String) {
+     self.id = id
+     self.name = name
+  }
+}
